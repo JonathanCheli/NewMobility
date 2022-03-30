@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/map_cv"
+        android:layout_margin="0dp"
+        app:cardCornerRadius="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+
+        <com.google.android.gms.maps.MapView
+            android:id="@+id/map"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent">
+            <include
+                android:id="@+id/your_id"
+                layout="@layout/bottom_sheet_layout"/>
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/view_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="end"
+            android:padding="10dp"
+            android:background="@drawable/roundedbtn"
+            android:drawableStart="@drawable/ic_taxi"
+            android:fontFamily="@font/old_standard_tt"
+            android:text="@string/global_view"
+            android:textColor="@color/blue"
+            android:textStyle="bold"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+
+
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
