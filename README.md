@@ -1,7 +1,6 @@
-# FreeNow MyTaxi APP
+# MyTaxi Clone APP
 
 Simple app that shows all the vehicle data in the bounds of Hamburg
-(53.694865,9.757589 & 53.394655, 10.099891).
 
 
 1 - the app displays a list of Vehicles in a bottomSheet inside a recyclerView, recyclerview which has
